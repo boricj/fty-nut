@@ -39,6 +39,7 @@ Build-Depends: debhelper (>= 9),
     libfty-common-nut-dev,
     libfty-common-socket-dev,
     libfty-shm-dev (>= 1.0.0),
+    libfty-common-messagebus-dev,
     gcc (>= 4.9.0), g++ (>= 4.9.0),
     systemd,
     dh-systemd,
@@ -72,6 +73,7 @@ Depends:
     libfty-common-nut-dev,
     libfty-common-socket-dev,
     libfty-shm-dev (>= 1.0.0),
+    libfty-common-messagebus-dev,
     libfty-nut1 (= ${binary:Version})
 Description: fty-nut development tools
  This package contains development files for fty-nut:
