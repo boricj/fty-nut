@@ -27,10 +27,11 @@ AM_CPPFLAGS = \
     ${fty_common_nut_CFLAGS} \
     ${fty_common_socket_CFLAGS} \
     ${fty_shm_CFLAGS} \
+    ${fty_common_messagebus_CFLAGS} \
     -D__STDC_FORMAT_MACROS \
     -I$(srcdir)/include
 
-project_libs = ${cxxtools_LIBS} ${cidr_LIBS} ${libnutclient_LIBS} ${fty_common_logging_LIBS} ${fty_common_LIBS} ${fty_common_mlm_LIBS} ${tntdb_LIBS} ${libzmq_LIBS} ${czmq_LIBS} ${malamute_LIBS} ${fty_proto_LIBS} ${fty_common_db_LIBS} ${fty_common_nut_LIBS} ${fty_common_socket_LIBS} ${fty_shm_LIBS}
+project_libs = ${cxxtools_LIBS} ${cidr_LIBS} ${libnutclient_LIBS} ${fty_common_logging_LIBS} ${fty_common_LIBS} ${fty_common_mlm_LIBS} ${tntdb_LIBS} ${libzmq_LIBS} ${czmq_LIBS} ${malamute_LIBS} ${fty_proto_LIBS} ${fty_common_db_LIBS} ${fty_common_nut_LIBS} ${fty_common_socket_LIBS} ${fty_shm_LIBS} ${fty_common_messagebus_LIBS}
 
 SUBDIRS = doc
 SUBDIRS += include
@@ -66,6 +67,7 @@ EXTRA_DIST += \
     Findfty_common_nut.cmake \
     Findfty_common_socket.cmake \
     Findfty_shm.cmake \
+    Findfty_common_messagebus.cmake \
     builds/cmake/Modules/ClangFormat.cmake \
     builds/cmake/clang-format-check.sh.in \
     builds/cmake/Config.cmake.in \

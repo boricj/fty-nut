@@ -24,6 +24,7 @@ git clone --quiet --depth 1 https://github.com/42ity/fty-common-db.git fty-commo
 git clone --quiet --depth 1 https://github.com/42ity/fty-common-nut.git fty-common-nut
 git clone --quiet --depth 1 https://github.com/42ity/fty-common-socket.git fty-common-socket
 git clone --quiet --depth 1 https://github.com/42ity/fty-shm.git fty_shm
+git clone --quiet --depth 1 https://github.com/42ity/fty-common-messagebus.git fty-common-messagebus
 cd -
 
 if ! ((command -v dpkg-query >/dev/null 2>&1 && dpkg-query --list zproject >/dev/null 2>&1) || \
